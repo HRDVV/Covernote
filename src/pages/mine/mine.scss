@@ -1,0 +1,41 @@
+.pg-mine {
+  .mine-header {
+    height: 300px;
+    background: rgba(0,0,0, .5);
+    display: flex;
+    .mine-logo {
+      width: 200px;
+      display: flex;
+      margin: auto;
+      flex-direction: column;
+      align-items: center;
+      .logo {
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        border: 5Px solid #fff;
+      }
+      .name {
+        font-size: 28px;
+        color: #ffffff;
+      }
+    }
+  }
+  .mine-detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px 20px 0;
+    margin-left: 40px;
+    .label {
+      font-size: 28px;
+      color: #666;
+    }
+    .name {
+      font-size: 28px;
+    }
+    &:not(:last-child) {
+      border-bottom: 1Px solid #f0f0f0;
+    }
+  }
+}

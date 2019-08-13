@@ -1,6 +1,5 @@
 import '@tarojs/async-await'
 import Taro, { Component, Config } from '@tarojs/taro'
-import { Button } from '@tarojs/components'
 import Index from './pages/index'
 import './app.scss'
 
@@ -12,35 +11,39 @@ class App extends Component {
   config: Config = {
     pages: [
       'pages/index/index',
+      'pages/mine/mine'
     ],
     window: { 
       backgroundTextStyle: 'light',
-      navigationBarBackgroundColor: '#fff',
-      navigationBarTitleText: 'WeChat',
+      navigationBarBackgroundColor: '#f0f0f0',
       navigationBarTextStyle: 'black'
     },
-    subPackages: [
-      {
-        root: 'packages/package1',
-        pages: [
-          'pages/demo/demo'
-        ]
-      }
-    ]
+    tabBar: {
+      custom: false,
+      selectedColor: '#07c160',
+      position: 'bottom',
+      list: [
+        { 
+          iconPath: 'assets/images/list.png',
+          selectedIconPath: 'assets/images/list_selected.png',
+          pagePath: 'pages/index/index', 
+          text: '待办事项'
+        },
+        { 
+          iconPath: 'assets/images/user.png',
+          selectedIconPath: 'assets/images/user_selected.png',
+          pagePath: 'pages/mine/mine', 
+          text: '我的'
+        }
+      ]
+    },
+    subPackages: [],
   }
   
   componentDidMount () {
-    let name = 'hrd', key = 2 + 2
-    let arr = [23, 3]
-    arr.forEach(element => {
-      console.log(element)
-    })
-
-    console.log(name, key)
   }
   
-  componentDidShow () {
-  }
+  componentDidShow () {}
    
   componentDidHide () {}
   
@@ -52,9 +55,7 @@ class App extends Component {
   // 请勿修改此函数
   render () {
     return (
-      <Button onClick={this.handleClick}>
-        <Index />
-      </Button>
+      <Index></Index>
     )
   }
 }

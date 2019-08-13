@@ -1,3 +1,5 @@
+const path = require('path')
+
 const config = {
   projectName: 'Covernote',
   date: '2019-8-7',
@@ -9,6 +11,13 @@ const config = {
   },
   sourceRoot: 'src',
   outputRoot: 'dist',
+  // alias: {
+  //   '@components': path.resolve(__dirname, '..', 'src/components'),
+  //   '@assets': path.resolve(__dirname, '..', 'src/assets'),
+  //   '@global': path.resolve(__dirname, '..', 'src/global'),
+  //   '@service': path.resolve(__dirname, '..', 'src/service'),
+  //   '@store': path.resolve(__dirname, '..', 'src/store')
+  // },
   plugins: {
     babel: {
       sourceMap: true,
