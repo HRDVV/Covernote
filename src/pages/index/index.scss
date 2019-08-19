@@ -1,0 +1,25 @@
+.pg-news-home {
+  .tabs {
+    .list-wraper {
+      margin-top: 120px;
+      background: #ffffff;
+    }
+    .at-tabs__underline {
+      height: 0 !important;
+    }
+    .at-tabs__header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      border: none;
+      z-index: 100;
+    }
+  }
+  .load-status {
+    color: #999999;
+    font-size: 24px;
+    text-align: center;
+    display: block;
+    margin: 20px 0;
+  }
+}

@@ -1,0 +1,40 @@
+.pg-mine {
+  .nav {
+    height: 130px;
+    background: #ffffff;
+    .at-nav-bar__text {
+      padding-top: 70px;
+    }
+  }
+  .line {
+    background: #f0f0f0;
+    height: 10px;
+  }
+  .header {
+    .logo {
+      display: block;
+      width: 120px;
+      height: 120px;
+      background: #ccc;
+      border-radius: 50%;
+      margin: 50px auto;
+    }
+    .login {
+      background: transparent;
+      border: none;
+      margin-top: -50px;
+      &::after {
+        border: none;
+      }
+    }
+  }
+  .buket {
+    padding: 30px 20px;
+    .tip {
+      color: #cccccc;
+      font-size: 28px;
+      margin-top: 300px;
+      text-align: center;
+    }
+  }
+}

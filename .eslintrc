@@ -1,0 +1,50 @@
+{
+  "extends": ["taro"],
+  "rules": {
+    "no-unused-vars": ["off", { "varsIgnorePattern": "Taro|Config|Chain" }],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".tsx"] }],
+    "react/sort-comp": 0,
+    "import/no-commonjs": 0,
+    "no-debugger": 2,
+    "quotes": [2, "single"],
+    "semi": [2, "never"],
+    "object-curly-spacing": [2, "always"],
+    "no-await-in-loop": 2,
+    "for-direction": 2,
+    "no-template-curly-in-string": 2,
+    "block-scoped-var": 2,
+    "no-extra-bind": 2,
+    "prefer-promise-reject-errors": 2,
+    "require-await": 2,
+    "wrap-iife": [2, "outside"],
+    "no-shadow": 2,
+    "no-use-before-define": 2,
+    "array-bracket-spacing": [2, "never"],
+    "block-spacing": [2, "always"],
+    "brace-style": [2, "1tbs", { "allowSingleLine": true }],
+    "func-call-spacing": [2, "never"],
+    "indent": [2, 2, { "SwitchCase": 1 }],
+    "jsx-quotes": [2, "prefer-double"],
+    "key-spacing": 2,
+    "space-before-blocks": 2,
+    "generator-star-spacing": [2, { "before": false, "after": true }],
+    "no-duplicate-imports": 2,
+    "template-curly-spacing": [2, "always"],
+    "no-redeclare": 2,
+    "space-infix-ops": 2,
+    "space-unary-ops": 2,
+    "arrow-spacing": 2,
+    "comma-spacing": 2,
+    "eol-last": ["error", "always"],
+    "no-multiple-empty-lines": ["error", { "max": 1, "maxEOF": 0 }],
+    "import/prefer-default-export": 0
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "useJSXTextNode": true,
+    "project": "./tsconfig.json"
+  }
+}
