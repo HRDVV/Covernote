@@ -45,12 +45,13 @@ function List (props: Item): JSX.Element {
             <View 
               className={item.category === 'video' ? 'list-video' : 'list-item'}
             >
+              <View className="at-icon at-icon-play" onClick={clickVideo} />
               <Text className="title">{item.title}</Text>
               {
                 src && (
                   item.title !== playing.title
                     ?
-                    <Image src={item.pic} style="width: 100%;" onClick={clickVideo} />
+                    <Image src={item.pic} style="width: 100%;" />
                     :
                     (<Video
                       className="video"

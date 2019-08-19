@@ -15,6 +15,9 @@
       z-index: 100;
     }
   }
+  .panel {
+    overflow-x: hidden;
+  }
   .load-status {
     color: #999999;
     font-size: 24px;

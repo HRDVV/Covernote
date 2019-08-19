@@ -116,6 +116,7 @@ class Index extends Component<PageOwnProps, PageState> {
           key={item.title}
           current={current} 
           index={index}
+          className="panel"
         >
           <View className="list-wraper">
             { current === index && <NewsList newsList={newsList} /> }

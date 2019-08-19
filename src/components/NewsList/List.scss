@@ -1,6 +1,20 @@
 .cp-list-item {
+  .at-icon-play {
+    position: absolute;
+    background: rgba(0,0,0,.3);
+    width: 710px;
+    height: 480px;
+    top: 62px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    color: #ffffff;
+
+  }
   .list-video {
     display: flex;
+    position: relative;
     flex-direction: column;
     justify-content: space-between;
     padding: 20px;
