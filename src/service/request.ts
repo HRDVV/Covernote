@@ -11,6 +11,10 @@ import { SERVER_URL } from '@/config'
 import { RequestConfig } from './request.d'
 import { Interceptor } from './interceptor'
 
+/**
+ * request
+ * @param options
+ */
 function ajax(options: RequestConfig): Promise<any> {
   if (!options.url || typeof options.url !== 'string') {
     throw new Error('url必传且只能为string类型')

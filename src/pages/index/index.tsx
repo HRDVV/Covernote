@@ -116,9 +116,9 @@ class Index extends Component<PageOwnProps, PageState> {
           key={item.title}
           current={current} 
           index={index}
-          className="panel"
+          className='panel'
         >
-          <View className="list-wraper">
+          <View className='list-wraper'>
             { current === index && <NewsList newsList={newsList} /> }
           </View>
         </AtTabsPane>
@@ -129,19 +129,19 @@ class Index extends Component<PageOwnProps, PageState> {
   render () {
     const { tabList, current, newsList, status } = this.state
     return (
-      <View className="pg-news-home">
+      <View className='pg-news-home'>
         <AtTabs
           scroll
           swipeable={false}
           animated={false}
           current={current} 
           tabList={tabList}
-          className="tabs"
+          className='tabs'
           onClick={this.changeTabs}
         >
           { this.renderTabs(tabList, current, newsList) }
         </AtTabs>
-        <Text className="load-status">{status === 0 ? '没有更多了' : (status === 1 ? '加载中' : '') }</Text>
+        <Text className='load-status'>{status === 0 ? '没有更多了' : (status === 1 ? '加载中' : '') }</Text>
       </View>
     )
   }

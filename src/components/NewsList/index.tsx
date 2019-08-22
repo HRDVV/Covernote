@@ -13,7 +13,7 @@ const NewsList = (props: PageOwnProps): JSX.Element => {
   }, [])
 
   return (
-    <View className="cp-news-list">
+    <View className='cp-news-list'>
       {
         newsList.map((newsItem: ListItem) => {
           return (

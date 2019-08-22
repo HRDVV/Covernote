@@ -19,19 +19,19 @@ function List (props: Item): JSX.Element {
   let src: any
   item.content && (src = item.content.match(/src=['"]?(\S+)['"]?/))
   return (
-    <View className="cp-list-item">
+    <View className='cp-list-item'>
       {
         item.category !== 'video' 
           ? 
           (
             <View 
-              className="list-item"
+              className='list-item'
             >
-              <View className="list-left">
-                <Text className="list-left-top">{item.title}</Text>
-                <Text className="list-left-bottom">{item.src} {item.time}</Text>
+              <View className='list-left'>
+                <Text className='list-left-top'>{item.title}</Text>
+                <Text className='list-left-bottom'>{item.src} {item.time}</Text>
               </View>
-              <View className="list-right">
+              <View className='list-right'>
                 <Image
                   style={{ width: Taro.pxTransform(175), height: Taro.pxTransform(120), marginLeft: Taro.pxTransform(20), display: 'block', background: '#ccc' }}
                   src={item.pic}
@@ -45,16 +45,16 @@ function List (props: Item): JSX.Element {
             <View 
               className={item.category === 'video' ? 'list-video' : 'list-item'}
             >
-              <View className="at-icon at-icon-play" onClick={clickVideo} />
-              <Text className="title">{item.title}</Text>
+              <View className='at-icon at-icon-play' onClick={clickVideo} />
+              <Text className='title'>{item.title}</Text>
               {
                 src && (
                   item.title !== playing.title
                     ?
-                    <Image src={item.pic} style="width: 100%;" />
+                    <Image src={item.pic} style='width: 100%;' />
                     :
                     (<Video
-                      className="video"
+                      className='video'
                       src={src[1]}
                       controls
                       poster={item.pic}
@@ -65,7 +65,7 @@ function List (props: Item): JSX.Element {
                     />)
                 )
               }
-              <Text className="time">{item.src} {item.time}</Text>
+              <Text className='time'>{item.src} {item.time}</Text>
             </View>
           )
       }

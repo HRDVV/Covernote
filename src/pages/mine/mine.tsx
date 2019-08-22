@@ -32,28 +32,28 @@ export default class Mine extends Component<PageOwnProps, PageState> {
   render () {
     const { userInfo } = this.state
     return (
-      <View className="pg-mine">
+      <View className='pg-mine'>
         <AtNavBar
-          className="nav"
-          color="#000"
-          leftText="意见反馈"
+          className='nav'
+          color='#000'
+          leftText='意见反馈'
           border={false}
         />
-        <View className="header">
-          <Image className="logo" src={userInfo.avatarUrl} />
+        <View className='header'>
+          <Image className='logo' src={userInfo.avatarUrl} />
           <Button
-            type="default"
-            className="login"
+            type='default'
+            className='login'
             onGetUserInfo={this.getUserInfo.bind(this)}
-            open-type="getUserInfo"
+            open-type='getUserInfo'
           >
             { userInfo.avatarUrl ? userInfo.nickName : '未登录，点击登录' }
           </Button>
         </View>
-        <View className="line" />
-        <View className="buket">
+        <View className='line' />
+        <View className='buket'>
           <View>我的收藏</View>
-          { !userInfo.avatarUrl && <View className="tip">点击登录，获取专属你的收藏列表吧</View> }
+          { !userInfo.avatarUrl && <View className='tip'>点击登录，获取专属你的收藏列表吧</View> }
         </View>
       </View>
     )
